@@ -6,7 +6,7 @@ body {
   background-color: #3d6375;
   color: white;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,4 +16,8 @@ body {
 ul li {
   list-style: none;
   padding: 0;
+}
+
+h2 {
+  text-align: center;
 }
