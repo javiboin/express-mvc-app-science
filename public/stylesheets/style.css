@@ -108,3 +108,9 @@ nav a:hover {
 .more:hover {
   color: #698b92;
 }
+
+#github-link {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
