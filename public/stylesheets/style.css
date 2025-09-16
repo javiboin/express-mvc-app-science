@@ -62,3 +62,13 @@ nav a:hover {
   height: 30px;
   margin-left: 5px;
 }
+
+.btn-home {
+  border: 1px #131313 solid;
+  background-color: #698b92;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+}
