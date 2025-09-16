@@ -12,7 +12,13 @@ const heroeController = {
             return res.status(404).send('No encontramos al científico indicado. Por favor, elija otro id');
         }
 
-        return res.render('heroes/detail', { title: 'Heroes de la programación', nombre : heroe.nombre, profesion: heroe.profesion });
+        return res.render('heroes/detail', { 
+            title: 'Heroes de la programación', 
+            nombre : heroe.nombre, 
+            profesion: heroe.profesion,
+            foto: heroe.foto,
+            icono: heroe.icono
+        });
     },
     showBio: (req, res, next) => {
         id = req.params.id;
