@@ -72,3 +72,27 @@ nav a:hover {
   font-size: 20px;
   padding: 10px;
 }
+
+.listado-cientificos {
+  margin: 1rem 0;
+  font-size: 30px;
+}
+
+.listado-cientificos li{
+  margin-bottom: 0.5rem;
+}
+
+.listado-cientificos li a{
+  color: white;
+  text-decoration: none;
+  transition: all .8s ease;
+}
+
+.listado-cientificos li a:hover{
+  color: #698b92;
+  text-decoration: none;
+}
+
+#list-title {
+  margin-top: 50px;
+}

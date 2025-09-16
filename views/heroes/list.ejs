@@ -6,11 +6,13 @@
 
     <%- include('../partials/menu') %>
 
-    <p>Listado de Heroes de la Programación y la Ciencia de la computación</p>
+    <img src="images/portada.png" alt="Cientificos de la computación" width="600">
 
-    <ul>
+    <h2 id="list-title">Listado de Heroes de la Programación y la Ciencia de la computación</h2>
+
+    <ul class="listado-cientificos">
         <% data.forEach((heroe) => { %>
-        <li><a href=""> <%= heroe.nombre %> </a> </li>
+        <li><a href="/heroes/detalle/id/<%= heroe.id %>"> <%= heroe.nombre %> </a> </li>
         <% }); %>
     </ul>
 
