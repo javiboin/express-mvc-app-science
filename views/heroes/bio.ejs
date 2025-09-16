@@ -2,11 +2,22 @@
 <html lang="en">
 <%- include('../partials/head') %>
 <body>
-    <h1><%= title %></h1>
-    <p>Heroe</p>
+    <%- include('../partials/header') %>
 
-    <p>Hola, mi nombre es <%= nombre %></p>
-    <p><%= bio %></p>
+    <h2 id="bio-title">Hola, mi nombre es <%= nombre %></h2>
+    
+    <div id="origen">
+        <p>País de Origen: <%= pais %></p>
+        <img src="/images/<%= icono%>" alt="Foto del perfil">
+    </div>
+    
+    <div id="historia">
+        <p>Reseña</p>
+        <p><%= bio %></p>
+    </div>
+
+    <img src="/images/<%= foto%>" alt="Foto del perfil" width="50%">
+    
 
     <a href="/">Volver al inicio</a>
 </body>

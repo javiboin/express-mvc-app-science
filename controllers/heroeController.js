@@ -14,10 +14,10 @@ const heroeController = {
 
         return res.render('heroes/detail', { 
             title: 'Heroes de la programación', 
+            id: heroe.id,
             nombre : heroe.nombre, 
             profesion: heroe.profesion,
             foto: heroe.foto,
-            icono: heroe.icono
         });
     },
     showBio: (req, res, next) => {
@@ -30,7 +30,14 @@ const heroeController = {
         } else if (!isOk) {
             return res.send(`Lamento que no desees saber más de ${heroe.nombre}. <a href="/heroes/detalle/id/${heroe.id}">Volver al incio</a>`);
         } else {
-            return res.render('heroes/bio', { title: 'Heroes de la programación', nombre : heroe.nombre, bio: heroe.resenia});
+            return res.render('heroes/bio', { 
+                title: 'Heroes de la programación', 
+                nombre : heroe.nombre, 
+                bio: heroe.resenia,
+                foto: heroe.foto,
+                pais: heroe.pais,
+                icono: heroe.icono
+            });
         }
     }
 }

@@ -47,3 +47,18 @@ nav a:hover {
   cursor: pointer;
   transform: translateY(2px);
 }
+
+#bio-title {
+  font-size: 50px;
+}
+
+#origen {
+  display: flex;
+  align-items: center;
+}
+
+#origen img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}

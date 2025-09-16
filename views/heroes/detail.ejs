@@ -2,14 +2,14 @@
 <html lang="en">
 <%- include('../partials/head') %>
 <body>
-    <h1><%= title %></h1>
-    <p>Heroe</p>
+    <%- include('../partials/header') %>
 
     <p>Hola, mi nombre es <%= nombre %> y soy <%= profesion %></p>
 
-    <img src="/images/<%= foto%>" alt="Foto del perfil">
-    <img src="/images/<%= icono%>" alt="Foto del perfil">
+    <a href="/heroes/bio/id/<%= id %>/ok">Ver más</a>
 
-    <a href="/">Volver al inicio</a>
+    <img src="/images/<%= foto%>" alt="Foto del perfil" width="50%">
+
+    <a href="/" class="btn-home">Volver al inicio</a>
 </body>
 </html>
