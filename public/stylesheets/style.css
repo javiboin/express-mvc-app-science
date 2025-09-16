@@ -6,7 +6,7 @@ body {
   background-color: #3d6375;
   color: white;
   padding: 50px;
-  font: 14px "Roboto", sans-serif;
+  font: 16px "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,4 +20,30 @@ ul li {
 
 h2 {
   text-align: center;
+}
+
+nav {
+  border: none;
+  background-color: #698b92;
+  display: flex;
+  gap: 0;
+  margin: 20px 20px 30px;
+  padding: auto;
+}
+
+nav a {
+  border: 1px #131313 solid;
+  background-color: #698b92;
+  color: white;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  transition: all .8s ease;
+}
+
+nav a:hover {
+  background-color: #31494e;
+  cursor: pointer;
+  transform: translateY(2px);
 }
