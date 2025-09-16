@@ -6,10 +6,14 @@
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Página dedicada a los <%= title %></p>
+    
+    <%- include('./partials/header') %>
 
-    <h2>“Aquí encontrarás algunos de los científicos y matemáticos destacados en el mundo de la ciencia y de la programación. Esperamos te sorprendas.”</h2>
+    <%- include('./partials/menu') %>
+
+    <img src="images/portada.png" alt="Cientificos de la computación" width="600">
+
+    <%- include('./partials/footer') %>
 
   </body>
 </html>
