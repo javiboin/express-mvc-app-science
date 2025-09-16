@@ -1,4 +1,10 @@
+html {
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+}
+
 body {
+  background-color: #3d6375;
+  color: white;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display: flex;
