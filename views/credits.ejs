@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel='stylesheet' href='/stylesheets/style.css'>
 </head>
 <body>
-    <h1><%= title %></h1>
+    <%- include('./partials/header') %>
 
-    <p>Hecho con ❤️ en Programación Web Full Stack by Javier Oyarzo @Javiboin</p>
+    <%- include('./partials/menu') %>
+    
+    <p>Esta página fue desarrollada por Javier Oyarzo como proyecto de aprendizaje en el curso de Programación Web Full Stack de Digital House.</p>
+    <p>Las imágenes y datos presentados son recopilados de diversas fuentes en línea y son utilizados con fines educativos.</p>
+
+    <%- include('./partials/footer') %>
 
     <a href="/">Volver al inicio</a>
 </body>
