@@ -90,9 +90,20 @@ nav a:hover {
 
 .listado-cientificos li a:hover{
   color: #698b92;
-  text-decoration: none;
 }
 
 #list-title {
   margin-top: 50px;
+}
+
+.more {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all .8s ease;
+}
+
+.more:hover {
+  color: #698b92;
 }
