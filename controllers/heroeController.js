@@ -2,7 +2,7 @@ const scienceData = require('../db/science.js');
 
 const heroeController = {
     index:(req, res, next) => {
-        res.render('heroes/list', { title: 'Heroes', data : scienceData.lista });
+        res.render('heroes/list', { title: 'Heroes de la programación', data : scienceData.lista });
     },
     showDetail: (req, res, next) => {
         id = req.params.id;
@@ -12,7 +12,7 @@ const heroeController = {
             return res.status(404).send('No encontramos al científico indicado. Por favor, elija otro id');
         }
 
-        return res.render('heroes/detail', { title: 'Heroes', nombre : heroe.nombre, profesion: heroe.profesion });
+        return res.render('heroes/detail', { title: 'Heroes de la programación', nombre : heroe.nombre, profesion: heroe.profesion });
     },
     showBio: (req, res, next) => {
         id = req.params.id;
@@ -24,7 +24,7 @@ const heroeController = {
         } else if (!isOk) {
             return res.send(`Lamento que no desees saber más de ${heroe.nombre}. <a href="/heroes/detalle/id/${heroe.id}">Volver al incio</a>`);
         } else {
-            return res.render('heroes/bio', { title: 'Heroes', nombre : heroe.nombre, bio: heroe.resenia});
+            return res.render('heroes/bio', { title: 'Heroes de la programación', nombre : heroe.nombre, bio: heroe.resenia});
         }
     }
 }
