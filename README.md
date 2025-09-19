@@ -23,8 +23,7 @@ Página Web con información de algunas de las personas más importantes en nues
     npm start
 
 ## 📌 Acceso
-   ```sh
-       localhost:3000
+   Url: http://localhost:3000/
 
 ## 📌 Uso
 Rutas:
@@ -41,3 +40,8 @@ Rutas:
 - Node.js
 - Express
 - EJS
+
+
+
+
+
