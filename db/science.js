@@ -27,7 +27,7 @@ module.exports = {
 	}, {
 		id: 4,
 		nombre: "Tim Berners-Lee",
-		foto: "tim-berners-lee.png",
+		foto: "tim-berners-lee.jpg",
 		profesion: "Científico de la Computación",
 		pais: "Reino Unido",
 		icono: "uk-30.png",
