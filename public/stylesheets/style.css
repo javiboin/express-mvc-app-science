@@ -8,7 +8,6 @@
     color: rgb(195, 204, 221);
 }
 
-
 html {
     background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
 }
@@ -33,28 +32,35 @@ h2 {
 
 nav {
   border: none;
-  background-color: #698b92;
   display: flex;
-  gap: 0;
+  gap: .5rem;
   margin: 20px 20px 30px;
   padding: auto;
 }
 
 nav a {
-  border: 1px #131313 solid;
+  border: none;
   background-color: #698b92;
-  color: white;
-  display: inline-block;
   font-size: 20px;
   padding: 10px;
-  text-decoration: none;
   transition: all .8s ease;
 }
 
-nav a:hover {
+.buttons {
+  border-radius: 10px;
+  transition: all .8s ease;
+}
+
+.buttons:hover {
   background-color: #31494e;
   cursor: pointer;
   transform: translateY(2px);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #bio-title {
